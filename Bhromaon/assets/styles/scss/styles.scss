@@ -1,0 +1,486 @@
+@use '_fonts.scss';
+
+:root { font-size: 10px;}
+
+.center-wrapper{
+    margin: 0 27rem 0 33rem;
+}
+// body{
+//     // border: 15px solid #FFFFFF;
+// }
+
+.site-header {
+    background-image: url(../../images/site-header-bg.svg);
+    width: 177rem;
+   
+    height: 82rem;
+    max-width: 100%;
+    
+   
+
+    &__text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            font-family: fonts.$josefin-fonts;
+            font-weight: 700;
+            font-size: 4.8rem;
+            color: #FFFFFF;
+            padding-top: 26rem;
+            letter-spacing: 4.8px;
+            line-height: 2.6rem;
+        }
+        p{
+            font-family: fonts.$josefin-fonts;
+            font-weight: 400;
+            font-size: 2.2rem;
+            color: #FFFFFF;
+            margin-top: 1.1rem;
+            letter-spacing: 6.8px;
+            line-height: 2.6rem;
+
+        }
+
+    }
+  
+    &__search {
+        margin: 4.8rem auto;
+        max-width: 60%;
+        background-color: #FFFFFF;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 2px 1px 1px 0;
+
+        input {
+            border: none;
+            color: #999999;
+            font-family: fonts.$josefin-fonts;
+            font-size: 1.4rem;
+            line-height: 2.6rem;
+            letter-spacing: 2.8px;
+            text-align: center;
+            width: 503px;            
+        }
+        button {
+            font-family: fonts.$aleo-fonts;
+            width: 150px;
+            height: 4.5rem;
+            background-color: #5474FD;
+            color: #FFFFFF;
+            font-size: 1.4rem;
+            line-height: 2.6rem;
+            letter-spacing: 1.4px;
+            border: none;
+            &:hover {
+                background-color: darken($color: #5474FD, $amount: 8);
+            }
+            
+        }
+
+      
+
+    }
+
+    &__scroll {
+        padding: 11rem 0 13rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        :hover {
+            font-size: 1.6rem;
+            color: #999999;
+        }
+
+
+        a{
+            font-family: fonts.$josefin-fonts;
+            color: white;
+            font-size: 1.4rem;
+            line-height: 2.6rem;
+            letter-spacing: 1.4px;
+            text-decoration: none;
+
+          
+          
+        }
+    }
+
+}
+
+.site-nav {
+    background-color: #5474FD;
+
+   &_inner{
+    font-family: fonts.$aleo-fonts;
+    color: #FFFFFF;
+    font-size: 1.4rem ;
+    line-height: 2.6rem;
+    padding: 3.2rem 0 3.1rem 0;
+    display: flex;
+    justify-content: space-between;
+    ul {
+        display: flex;
+        gap: 1.2rem;
+        a{
+            font-family: fonts.$aleo-fonts;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        :hover{
+            text-decoration: underline;
+            color: #E8E8E8;
+        }
+    }
+   }
+}
+
+.site-info{
+    background-image: url(../../images/site-info.svg);
+    background-repeat: no-repeat;
+ 
+
+    
+    
+
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        gap: 16rem;
+    }
+    
+    &__text {
+        width: 56rem;
+        font-family: fonts.$aleo-fonts;
+        padding-bottom: 9rem;
+        // display: flex;
+        // flex-direction: column;
+        // text-align: left;
+        h2{
+            font-weight: 400;
+            font-size: 3.6rem;
+            line-height: 2.6rem;
+            padding-top: 21rem;
+            color: #FFFFFF;
+            margin-bottom: 5rem;
+        }
+
+        p{
+            font-family: fonts.$josefin-fonts;
+            font-size: 1.6rem;
+            letter-spacing: 1.6px;
+            line-height: 2.6rem;
+            color: #E8E8E8;
+            
+        }
+
+        button{
+            font-family: fonts.$aleo-fonts;
+            background-color: #5474FD;
+            color: #FFFFFF;
+            border: none;
+            width: 17rem;
+            height: 4.5rem;
+            font-size: 1.6rem;
+            letter-spacing: 1.2px;
+            line-height: 2.6rem;
+            margin-top: 4.5rem;
+            &:hover {
+                background-color: darken($color: #5474FD, $amount: 8);
+            }
+           
+
+        }
+        
+        
+        
+    }
+    &__p{
+        margin-bottom: 3rem;
+    }
+
+    &__img{
+       width: 35rem;
+        :first-child{
+            transform: translateX(-9rem);
+        margin-top: 12rem;
+        }
+        max-width: 30%;
+        
+        
+      
+    }
+
+    
+    
+
+   
+
+
+}
+
+.site-features{
+    background-color: #333333;
+
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        padding: 8rem 0 8rem 0;
+
+        li{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center;
+        }
+       
+
+        p{
+            font-family: fonts.$aleo-fonts;
+            font-size: 3.6rem;
+            line-height: 2.6rem;
+            color: #E8E8E8;
+        }
+        
+        img{
+            width: 6rem;
+        }
+    }
+
+}
+
+
+.site-spain{
+    background-image: url(../../images/Spain.svg);
+    width: 134.9rem;
+    height: 70rem;
+    position: relative;
+
+    &__inner{
+        background-color: #232323;
+        opacity: 90%;
+        max-width: 56rem;
+        position: absolute;
+        top: 23rem;
+
+        h2{
+            font-family: fonts.$josefin-fonts;
+            font-size: 2rem;
+            letter-spacing: 1.2px;
+            line-height: 2.6rem;
+            color: #E8E8E8;
+            padding-top: 4.7rem;
+            padding-bottom: 2.3rem;
+            padding-left: 3rem;
+        }
+
+        h3{
+            font-family: fonts.$josefin-fonts;
+            font-size: 2rem;
+            line-height: 2.6rem;
+            color: #FFFFFF;
+            padding-bottom: 1.3rem;
+            padding-left: 3rem;
+
+        }
+
+        p{
+            font-family: fonts.$josefin-fonts;
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            color: #E8E8E8;
+            padding-bottom: 4.6rem;
+            padding-left: 3rem ;
+        }
+
+        button{
+            background-color: #5474FD;
+            color: #FFFFFF;
+            border: none;
+            font-family: fonts.$aleo-fonts;
+            font-size: 1.6rem;
+            letter-spacing: 1.2px;
+            line-height: 2.6rem;
+            width: 22rem;
+            height: 6rem;
+            margin-bottom: 4.9rem;
+            margin-left: 3rem;
+
+            &:hover {
+                background-color: darken($color: #5474FD, $amount: 8);
+            }
+        }
+    }
+}
+
+
+
+.site-madrid{
+    background-image: url(../../images/Madrid.svg);
+    width: 134.9rem;
+    height: 70rem;
+    position: relative;
+
+    &__inner{
+        background-color: #232323;
+        opacity: 90%;
+        max-width: 56rem;
+        position: absolute;
+        top: 22rem;
+        left: 75rem;
+
+        h2{
+            font-family: fonts.$josefin-fonts;
+            font-size: 2rem;
+            letter-spacing: 1.2px;
+            line-height: 2.6rem;
+            color: #E8E8E8;
+            padding-top: 4.7rem;
+            padding-bottom: 2.3rem;
+            padding-left: 3rem;
+        }
+
+        h3{
+            font-family: fonts.$josefin-fonts;
+            font-size: 2rem;
+            line-height: 2.6rem;
+            color: #FFFFFF;
+            padding-bottom: 1.3rem;
+            padding-left: 3rem;
+
+        }
+
+        p{
+            font-family: fonts.$josefin-fonts;
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            color: #E8E8E8;
+            padding-bottom: 4.6rem;
+            padding-left: 3rem ;
+        }
+
+        button{
+            background-color: #5474FD;
+            color: #FFFFFF;
+            border: none;
+            font-family: fonts.$aleo-fonts;
+            font-size: 1.6rem;
+            letter-spacing: 1.2px;
+            line-height: 2.6rem;
+            width: 22rem;
+            height: 6rem;
+            margin-bottom: 4.9rem;
+            margin-left: 3rem;
+
+            &:hover {
+                background-color: darken($color: #5474FD, $amount: 8);
+            }
+        }
+    }
+}
+
+
+.site-tourist{
+    background-image: url(../../images/site-tourist-bg.svg);
+    width: 134.9rem;
+    height: 70rem;
+    background-repeat: no-repeat;
+    position: relative;
+
+    h4{
+        font-family: fonts.$aleo-fonts;
+        font-size: 3.6rem;
+        color: #FFFFFF;
+        line-height: 2.6rem;
+        text-align: center;
+        padding-top: 13rem;
+    }
+
+    &__inner{
+        figure{
+            max-width: 100%;
+            width: 445px;
+            height: 284px;
+            left: 15.1rem;
+            top: 24.7rem;
+            position: absolute;
+        }
+
+   
+     }
+     &__text{
+
+        background-color: #333333;
+        position: absolute;
+        left: 59.3rem;
+        top: 24.5rem;
+        width: 668px;
+        height: 287px;
+        h5{
+            font-family: fonts.$josefin-fonts;
+            font-size: 2rem;
+            line-height: 2.6rem;
+            color: #FEFEFE;
+            padding: 4.9rem 0 0.8rem 5.9rem;
+        }
+
+        p{
+            font-family: fonts.$josefin-fonts;
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            color: #E8E8E8;
+            padding: 0 2.5rem 3.9rem 6rem;
+
+        }
+    }
+}
+
+
+.site-footer{
+    background-color: #232323;
+
+    &__text{
+        h2{
+            font-family: fonts.$josefin-fonts;
+            color: #FFFFFF;
+            font-size: 2.4rem;
+            font-weight: 700;
+            letter-spacing: 3.36px;
+            line-height: 2.6rem;
+            text-align: center;
+            padding-top: 12.2rem;
+        }
+
+        p{
+            font-family: fonts.$josefin-fonts;
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            letter-spacing: 1.6px;
+            color: #FFFFFF;
+            text-align: center;
+            margin-top: 0.8rem;
+            margin-bottom: 2.9rem;
+        }
+
+       
+    }
+
+    &__logos{
+        padding-bottom: 5.3rem;
+        padding-left: 29rem;
+        
+
+        ul{
+            display: flex;
+        justify-content: space-between;
+        width: 16rem;
+
+        
+        }
+    }
+}
+
